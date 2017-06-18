@@ -1,0 +1,58 @@
+<div class="container-fluid">
+  <div class="col-lg-6">
+    <div class="ibox float-e-margins">
+      <div class="ibox-title">
+        <h5>Mileage</h5>
+      </div>
+      <div class="ibox-content">
+        <div>
+          <canvas #mileagebarChart height="140"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-6">
+    <div class="ibox float-e-margins">
+      <div class="ibox-title">
+        <h5>Distance Travelled </h5>
+      </div>
+      <div class="ibox-content">
+        <div>
+          <canvas #distancebarChart height="140"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-12">
+    <div class="ibox float-e-margins">
+      <div class="ibox-title">
+        <h5>Trip Information</h5>
+      </div>
+      <div class="ibox-content">
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr>
+              <th>Start Time</th>
+              <th>Distance (Km)</th>
+              <th>Duration (Min)</th>
+              <th>Fuel Consumed (Ltr)</th>
+              <th>Mileage (Km/Lt)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let data of tableData">
+              <td>{{data[0] | date:'medium'}}</td>
+              <td>{{data[1] | number:'.2-2'}}</td>
+              <td>{{(data[2]/60000) | number:'.2-2'}}</td>
+              <td>{{data[3]}}</td>
+              <td>{{data[4] | number:'.2-2'}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div>
