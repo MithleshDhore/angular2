@@ -1,0 +1,13 @@
+<div class="container-fluid">
+  <div class="col-lg-3">
+    <div class="ibox-content">
+      <h2>Vehicle List</h2>
+      <ul class="todo-list m-t">
+        <li *ngFor="let vehicle of vehicleData">
+          <span class="m-l-xs pointer" (click)="onVehicleSelect(vehicle.no)" >{{vehicle.no}}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</div>

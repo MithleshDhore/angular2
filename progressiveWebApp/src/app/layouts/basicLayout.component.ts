@@ -4,13 +4,13 @@ import { detectBody } from './../app.helpers';
 declare var jQuery:any;
 
 @Component({
-  selector: 'topnavigationlayout',
-  templateUrl: 'topNavigationlayout.template.html',
+  selector: 'basic',
+  templateUrl: 'basicLayout.template.html',
   host: {
     '(window:resize)': 'onResize()'
   }
 })
-export class TopNavigationLayoutComponent {
+export class BasicLayoutComponent {
 
   public ngOnInit():any {
     detectBody();
