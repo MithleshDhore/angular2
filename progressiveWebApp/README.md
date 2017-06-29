@@ -1,6 +1,6 @@
 Vehicle Tracking Progressive Web App in Angular4
 
-IMPORTANT: To run MEAN the applications locally you need NodeJS installed.
+IMPORTANT: To run the applications locally you need NodeJS installed.
 
 Open a command line window and navigate to the project root folder
 
