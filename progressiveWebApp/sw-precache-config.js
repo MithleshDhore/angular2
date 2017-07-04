@@ -2,7 +2,7 @@ module.exports = {
   staticFileGlobs: [
     'dist/*',
     'dist/assets/*',
-    'dist/assets/icon/*'
+    'dist/assets/icons/*'
   ],
   root: 'dist',
   stripPrefix: 'dist/',
